@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+footer {
+  background-color: purple;
+  height: 200px;
+  width: 100%; }
+  footer .ul .li {
+    font-size: 50px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: red; }
+
+/***********
+** HEADER **
+***********/
+.section-background-image {
+  height: 270px;
+  /*height: 40vh;*/
+  width: 100vw;
+  background: url("../img/stars2.jpg") no-repeat;
+  background-size: cover;
+  /*background-position: center bottom;*/ }
+
+.section-image-alpha {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 50px; }
+
+.logo {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.logo img {
+  text-align: center;
+  width: 300px; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  /*align-content: flex-end;*/
+  color: white; }
+
+.fixed-nav {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: black; }
+
+/*********
+** MAIN **
+*********/
+main {
+  min-height: 500px; }
+
+main section {
+  font-size: 100px;
+  width: 100%;
+  text-align: center; }
+
+main section h1 {
+  padding-top: 30px;
+  margin-bottom: -30px; }
+
+input {
+  padding: 5px;
+  font-size: 16px; }
+
+.post {
+  width: 100%;
+  /*height: 400px;*/
+  background-color: pink;
+  margin: 10px 0; }
+
+.post img {
+  width: 100%; }
+
+.post p {
+  padding: 16px; }
+
+.post h2 {
+  text-align: center;
+  padding-bottom: 10px; }
+
+.post ul {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  border: solid 1px black;
+  font-size: 18px; }
+
+.post li {
+  padding: 5px; }
+
+.post .name {
+  font-size: 36px; }
+
+/*tablet size screens*/
+@media (min-width: 568px) {
+  body {
+    background-color: blue; }
+  /***********
+  ** HEADER **
+  ***********/
+  .section-background-image {
+    height: 375px; }
+  .logo img {
+    text-align: left;
+    width: 500px; }
+  nav ul {
+    max-width: 900px;
+    margin: 0 auto; }
+  /*********
+  ** MAIN **
+  *********/
+  main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: green; }
+  .post {
+    width: 48%; } }
+
+/* end tablet size screens */
+/*desktop size screens*/
+@media (min-width: 1200px) {
+  body {
+    background-color: yellow; }
+  /***********
+  ** HEADER **
+  ***********/
+  .section-background-image {
+    height: 510px; }
+  .logo img {
+    /*text-align: left;*/
+    width: 770px; }
+  /*********
+  ** MAIN **
+  *********/
+  main {
+    width: 88%;
+    max-width: 1200px;
+    margin: 0 auto; }
+  .post {
+    width: 32%; } }
+
+/* end desktop size screens */
+
+/*# sourceMappingURL=maps/styles.css.map */
