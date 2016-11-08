@@ -1,7 +1,7 @@
 
 angular.module("myApp").service("mainService", function($http, $q){
 
-  var base = "http://swapi.co/api/";
+  var base = "https://swapi.co/api/";
 
 
   // this.getSwapi = function(pageNum){
