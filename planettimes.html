@@ -2,64 +2,42 @@
 <html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title>Choose Your Side</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Planet Times</title>
     <link rel="stylesheet" href="dist/styles.css" media="screen" title="no title">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body ng-controller="mainController">
 
     <section class="section-background-image">
       <section class="section-image-alpha">
-
         <div class="logo">
           <img src="img/logo.png" alt="" />
         </div>
         <nav>
             <ul>
-              <li>Home</li>
-              <li><a href="chooseyourside.html">Cities</a></li>
-              <li>About</li>
-              <li>Contact</li>
+              <li><a href="index.html">Characters</a></li>
+              <li><a href="planettimes.html">Planet Times</a></li>
             </ul>
         </nav>
       </section>
-
     </section>
 
-    <main>
-      <div class="post">
-        <h2>Alderaan</h2>
-        <p>{{alderaanClock | date: "HH:mm:ss"}}</p>
-      </div>
-
-      <div class="post">
-        <h2>Endor</h2>
-        <p style="color:red;">{{endorClock | date: "HH:mm:ss"}}</p>
-      </div>
-
-      <div class="post">
-        <h2>Naboo</h2>
-        <p>{{nabooClock | date: "HH:mm:ss"}}</p>
-      </div>
-
-      <div class="post">
-        <h2>Tatooine</h2>
-        <p>{{tatooineClock | date: "HH:mm:ss"}}</p>
-      </div>
+    <clock></clock>
 
 
-
-
-
-    </main>
+    <footer>
+        <img src="img/saber.jpg" alt="" />
+    </footer>
 
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 <script src="js/app.js"></script>
 <script src="js/mainController.js"></script>
 <script src="js/mainService.js"></script>
 <script src="js/mainDirective.js"></script>
+<script src="js/clockDirective.js"></script>
 <script src="js/moment.js"></script>
 
 <script type="text/javascript" src="js/jquery.js"></script>

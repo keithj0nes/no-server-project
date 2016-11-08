@@ -1,14 +1,112 @@
+
+
+
 footer {
-  background-color: purple;
+  background-color: black;
   height: 200px;
   width: 100%;
+  text-align: center;
+  padding-top: 30px;
 
-  .ul {
-
-    .li {
-      font-size: 50px;
-    }
-
+  img {
+    width: 300px;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+//
+// @media (min-width: 568px){
+//
+//   body {
+//     background-color: blue;
+//   }
+//
+//   .section-background-image {
+//     height: 375px;
+//
+//     .logo img {
+//       width: 500px;
+//     }
+//
+//     nav ul {
+//       max-width: 900px;
+//       margin: 0 auto;
+//     }
+//
+//   }
+//
+//   main {
+//     width: 90%;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//     background-color: green;
+//
+//     section h1 {
+//       font-size: 80px;
+//     }
+//
+//     .post {
+//       width: 48%;
+//     }
+//   }
+//
+//
+//
+// }
+//
+//
+//
+//
+//
+// /*desktop size screens*/
+// @media (min-width: 1200px){
+//   body {
+//     background-color: yellow;
+//   }
+//
+//   /***********
+//   ** HEADER **
+//   ***********/
+//
+//   .section-background-image {
+//     height: 510px;
+//
+//        img {
+//         width: 770px;
+//       }
+//   }
+//
+//   /*********
+//   ** MAIN **
+//   *********/
+//
+//   main {
+//     width: 88%;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//
+//     h1 {
+//       font-size: 200px;
+//     }
+//
+//     .post {
+//       width: 48%;
+//       background-color: pink;
+//       margin: 10px 0;
+//
+//     }
+//   }
+//
+//
+// } /* end desktop size screens */
