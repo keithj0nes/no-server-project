@@ -2,7 +2,7 @@ angular.module("myApp").directive("clock", function($interval){
 
 
   return {
-    restrict: "AE",
+    restrict: "A",
     templateUrl: "./test.html",
     link: function(scope, element, attr){
 

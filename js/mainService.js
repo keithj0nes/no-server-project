@@ -90,45 +90,62 @@ angular.module("myApp").service("mainService", function($http, $q){
     //     return "Failed"
     // })
 
-    var films = {
-      url: [
-       "http://swapi.co/api/films/1/",
-       "http://swapi.co/api/films/2/",
-       "http://swapi.co/api/films/3/",
-       "http://swapi.co/api/films/4/",
-       "http://swapi.co/api/films/5/",
-       "http://swapi.co/api/films/6/",
-       "http://swapi.co/api/films/7/"
-     ],
-      names: [
-        "A New Hope",
-        "Empire Strikes Back",
-        "Return of the Jedi",
-        "The Phantom Menace",
-        "Attack of the Clones",
-        "Revenge of the Sith",
-        "The Force Awakens"
-      ]
-    }
-
+    // var films = {
+    //   url: [
+    //    "http://swapi.co/api/films/1/",
+    //    "http://swapi.co/api/films/2/",
+    //    "http://swapi.co/api/films/3/",
+    //    "http://swapi.co/api/films/4/",
+    //    "http://swapi.co/api/films/5/",
+    //    "http://swapi.co/api/films/6/",
+    //    "http://swapi.co/api/films/7/"
+    //  ],
+    //   names: [
+    //     "A New Hope",
+    //     "Empire Strikes Back",
+    //     "Return of the Jedi",
+    //     "The Phantom Menace",
+    //     "Attack of the Clones",
+    //     "Revenge of the Sith",
+    //     "The Force Awakens"
+    //   ]
+    // }
+    var correctFilms = {
+       "http://swapi.co/api/films/1/": "A New Hope",
+       "http://swapi.co/api/films/2/": "Empire Strikes Back",
+       "http://swapi.co/api/films/3/": "Return of the Jedi",
+       "http://swapi.co/api/films/4/": "The Phantom Menace",
+       "http://swapi.co/api/films/5/": "Attack of the Clones",
+       "http://swapi.co/api/films/6/": "Revenge of the Sith",
+       "http://swapi.co/api/films/7/": "The Force Awakens"
+   };
 
 
 
     function finished(){
       if (get1 && get2 && get3){
 
-        for (var i = 0; i < allChars.length; i++) {
-          if(typeof allChars[i].films.length !== "undefined"){
-            for (var j = 0; j < allChars[i].films.length; j++) {
-              for (var k = 0; k < films.url.length; k++) {
-                if(allChars[i].films[j] === films.url[k]){
-                  allChars[i].films[j] = films.names[k]
-                }
-              }
-            }
-          }
-        }
+        // for (var i = 0; i < allChars.length; i++) {
+        //   if(typeof allChars[i].films.length !== "undefined"){
+        //     for (var j = 0; j < allChars[i].films.length; j++) {
+        //       for (var k = 0; k < films.url.length; k++) {
+        //         if(allChars[i].films[j] === films.url[k]){
+        //           allChars[i].films[j] = films.names[k]
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
 
+        allChars.forEach(function(character){
+         character.films.forEach(function(film,index){
+           for(prop in correctFilms){
+             if(prop === film){
+               character.films.splice(index,1,correctFilms[prop])
+             }
+           }
+         });
+       });
 
 
 
